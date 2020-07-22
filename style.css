@@ -31,13 +31,12 @@
   }
   
   ul li.checked {
-    background: #888;
-    color: #fff;
+    opacity: 0.6;
+    color: #999;
     text-decoration: line-through;
   }
   
   ul li.checked::before {
-    content: '';
     position: absolute;
     border-color: #fff;
     border-style: solid;

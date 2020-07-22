@@ -5,21 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo List</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-</head>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script></head>
 <body>
     <main>
         <div class="header">
             <h3>TODO LIST</h3>
-            <input type="text" id=myInput placeholder="Enter todo">
-            <span onclick="newElement()" class="addBtn">Add</span>
+            <input type="text" id="input" placeholder="Enter todo">
+            <span onclick="newItem()" class="addBtn">Add</span>
+            <button id=syncBtn class="addBtn">Sync to API</button>
         </div>
-        <ul id="myUL">
+        <ul id="ul">
             <li>Buy foodstuff</li>
             <li class="checked">Pay bills</li>
-            <li>Chill at the bar</li>
+            <!-- <li>Chill at the bar</li>
             <li>Write some code</li>
             <li>Read a book</li>
-            <li>Do my laundry</li>
+            <li>Do my laundry</li> -->
           </ul>
     </main>
 
